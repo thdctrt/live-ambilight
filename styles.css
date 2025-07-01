@@ -1,0 +1,34 @@
+body {
+    background-color: #111;
+    overflow: visible;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    --ambilight-color: transparent;
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 16/9;
+    overflow: visible;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at 50% 50%, var(--ambilight-color) 0%, var(--ambilight-color) 20%, transparent 75%, transparent 100%);
+    z-index: -1;
+}
+
+.container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+}
