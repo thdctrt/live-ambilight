@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <video crossorigin="anonymous" src="https://storage.yandexcloud.net/tt-misc/996368_Animals_Marine_1280x720.mp4"
+            controls muted loop></video>
+        <p>
+            video sourced from <a
+                href="https://www.freepik.com/free-video/wild-underwater-world-with-corals-colorful-exotic-fish-1_149829#fromView=search&page=1&position=26&uuid=4dbd1106-8643-4dc2-9eff-8cbf8a12063e">Freepik</a>
+        </p>
+        <a href="https://github.com/thdctrt/live-ambilight">GitHub</a>
+    </div>
+    <script src="./bundle.js"></script>
+    <script>
+        Ambilight.initAmbilight('video', '.container');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "live-ambilight",
+  "version": "0.0.1",
+  "description": "A library to create an ambilight effect from a video.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "build:demo": "esbuild src/index.ts --bundle --outfile=demo/bundle.js --format=iife --global-name=Ambilight",
+    "dev:demo": "esbuild src/index.ts --bundle --outfile=demo/bundle.js --format=iife --global-name=Ambilight --watch"
+  },
+  "author": "Timur Tokunov",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/colorthief": "^2.1.4",
+    "esbuild": "^0.20.2"
+  },
+  "dependencies": {
+    "colorthief": "^2.6.0",
+    "motion": "^12.23.0"
+  }
+}
